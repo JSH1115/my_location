@@ -10,4 +10,11 @@
         FROM member
         WHERE id = #{id}
     </select>
+
+    <insert id="insertMember" parameterType="MemberVO">
+        INSERT INTO member
+            (id, pw, name, reg_user, reg_ip)
+        VALUES
+            (#{id}, #{pw}, #{name}, #{name}, #{reg_ip})
+    </insert>
 </mapper>
