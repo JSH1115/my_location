@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.my_location.member.mapper.MemberMapper">
-    <select id="selectMember" resultType="MemberVO">
+    <select id="getMember" resultType="MemberVO">
         SELECT
             id, pw, name
         FROM member
